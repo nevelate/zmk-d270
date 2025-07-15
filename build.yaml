@@ -21,3 +21,4 @@
 include:
   - board: nice_nano
     shield: naked60
+    snippet: zmk-usb-logging
