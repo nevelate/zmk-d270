@@ -37,8 +37,8 @@
         row-gpios
             = <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row Pin 1  (D1) */
             , <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row Pin 2  (D0) */
-            , <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row Pin 3  (D2) */
-            , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row Pin 7  (D3) */
+            , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row Pin 3  (D14) */
+            , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row Pin 7  (D15) */
             , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row Pin 14 (D4) */
             , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row Pin 16 (D5) */
             , <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row Pin 17 (D6) */
@@ -72,9 +72,6 @@
 
 &i2c0 {
     status = "okay";
-    
-    sda-gpios = <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // Pin 15
-    scl-gpios = <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // Pin 14
 
     mcp23017: mcp23017@20 {
         compatible = "microchip,mcp23017";
