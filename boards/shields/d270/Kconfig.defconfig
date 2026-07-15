@@ -3,4 +3,10 @@ if SHIELD_D270
 config ZMK_KEYBOARD_NAME
     default "d270"
 
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
 endif # SHIELD_D270
