@@ -74,7 +74,7 @@
     status = "okay";
 
     mcp23017: mcp23017@20 {
-        compatible = "microchip,mcp23017";
+        compatible = "microchip,mcp230xx";
         reg = <0x20>; // Default address with A0, A1, A2 tied to GND
         gpio-controller;
         #gpio-cells = <2>;
