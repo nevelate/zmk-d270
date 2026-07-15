@@ -11,7 +11,7 @@
         zmk,physical-layout = &default_layout;
     };
 
-    kscan0: kscan_composite {
+    kscan0: kscan0 {
         compatible = "zmk,kscan-matrix";
         wakeup-source;
         diode-direction = "col2row"; // Columns (MCP23017) are outputs, Rows (nRF) are inputs
