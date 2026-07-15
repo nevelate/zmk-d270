@@ -1,0 +1,6 @@
+if SHIELD_D270
+
+config ZMK_KEYBOARD_NAME
+    default "d270"
+
+endif # SHIELD_D270
