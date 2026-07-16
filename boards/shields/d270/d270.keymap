@@ -32,7 +32,7 @@
         fn_layer {
             bindings = <
                 // Row 0
-                &none   &none   &none   &none   &kp K_SLEEP   &none   &none   &none   &kp K_MUTE   &none   &none   &kp LNLCK   &kp SLCK   &none   &none   &none   &none
+                &none   &none   &none   &none   &kp K_SLEEP   &none   &none   &none   &kp K_MUTE   &none   &none   &kp KP_NLCK   &kp SLCK   &none   &none   &none   &none
                 // Row 1
                 &out OUT_TOG   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_CLR  &none   &none   &kp N7   &kp N8   &kp N9   &kp FSLH   &none   &none   &none
                 // Row 2
