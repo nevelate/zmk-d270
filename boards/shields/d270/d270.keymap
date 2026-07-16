@@ -32,19 +32,19 @@
         fn_layer {
             bindings = <
                 // Row 0
-                &trans     &trans     &trans     &none      &trans     &trans     &trans     &trans     &none      &trans     &none      &trans     &trans     &trans     &trans
+                &none   &none   &none   &none   &kp K_SLEEP   &none   &none   &none   &kp K_MUTE   &none   &none   &kp LNLCK   &kp SLCK   &none   &none   &none   &none
                 // Row 1
-                &none      &none      &trans     &trans     &trans     &trans     &trans     &none      &none      &none      &none      &trans     &trans     &bt BT_SEL 0 &trans
+                &out OUT_TOG   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_CLR  &none   &none   &kp N7   &kp N8   &kp N9   &kp FSLH   &none   &none   &none
                 // Row 2
-                &none      &none      &none      &trans     &trans     &trans     &trans     &none      &trans     &trans     &trans     &trans     &trans     &trans     &bt BT_SEL 1
+                &none   &none   &none   &none   &none   &none   &none   &kp N4   &kp N5   &kp N6   &kp STAR   &none   &none   &none
                 // Row 3
-                &trans     &none      &none      &trans     &trans     &trans     &trans     &none      &trans     &none      &trans     &bt BT_SEL 2 &trans     &trans     &bt BT_SEL 3
+                &none   &none   &none   &none   &none   &none   &none   &kp N1   &kp N2   &kp N3   &kp MINUS   &none   &none
                 // Row 4
-                &trans     &none      &none      &trans     &trans     &trans     &trans     &trans     &none      &none      &trans     &bt BT_CLR &trans     &trans     &out OUT_TOG
+                &none   &none   &none   &none   &none   &none   &none   &kp N0   &none   &kp DOT   &kp PLUS   &none
                 // Row 5
-                &trans     &none      &none      &trans     &trans     &trans     &trans     &trans     &none      &none      &trans     &trans     &none      &trans     &trans
+                &none   &none   &none   &none   &none   &none   &none   &none   &kp HOME   &kp K_VOLUME_UP   &kp END
                 // Row 6
-                &none     &none      &none 
+                &none     &kp K_VOLUME_DOWN      &none
             >;
         };
     };
