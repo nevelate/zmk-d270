@@ -1,24 +1,13 @@
 if SHIELD_D270
 
 config ZMK_KEYBOARD_NAME
-    default "d270"
-
-config ZMK_BLE
-	default y
-
-config ZMK_USB
-	default y
+    default "D270"
 
 config I2C
 	default y
 
 config GPIO_MCP230XX
 	default y
-
-if USB_DEVICE_STACK
-	config USB_NRFX
-		default y
-endif # USB
 
 config BT_CTLR
 	default BT
