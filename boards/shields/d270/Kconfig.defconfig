@@ -9,9 +9,6 @@ config ZMK_BLE
 config ZMK_USB
 	default y
 
-config ZMK_SLEEP
-	default y
-
 config I2C
 	default y
 
