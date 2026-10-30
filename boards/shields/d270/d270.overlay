@@ -9,12 +9,13 @@
 / {
     chosen {
         zmk,physical-layout = &default_layout;
+        zmk,battery = &vbatt;
     };
 
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
-        diode-direction = "col2row"; // Columns (MCP23017) are outputs, Rows (nRF) are inputs
+        diode-direction = "row2col";
 
         col-gpios
             = <&mcp23017 7  GPIO_ACTIVE_HIGH> /* Col Pin 4  */
@@ -68,6 +69,10 @@
             RC(0,12) RC(1,12) RC(2,12)
         >;
     };
+
+    vbatt: vbatt {
+        compatible = "zmk,battery-nrf-vddh";
+    };
 };
 
 &i2c0 {
@@ -77,6 +82,7 @@
 
     mcp23017: mcp23017@20 {
         compatible = "microchip,mcp230xx";
+        wakeup-source;
         reg = <0x20>; // Default address with A0, A1, A2 tied to GND
         gpio-controller;
         #gpio-cells = <2>;
